@@ -402,6 +402,7 @@ bindkey -a 'q' push-line
 setopt complete_aliases     # aliased ls needs if file/dir completions work
 
 alias where="command -v"
+alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
 
 case "${OSTYPE}" in
 freebsd*|darwin*)
@@ -419,7 +420,7 @@ case "${OSTYPE}" in
 darwin*)
     alias updateports="sudo port selfupdate; sudo port outdated"
     alias portupgrade="sudo port upgrade installed"
-    export PATH=$PATH:/opt/local/bin:/opt/local/sbin/
+    export PATH=/opt/local/bin:/opt/local/sbin/:$PATH
     export PATH=$PATH:/System/Library/PrivateFrameworks/Apple80211.framework/Versions/A/Resources/
     ;;
 freebsd*)
