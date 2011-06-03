@@ -1,10 +1,21 @@
 set nocompatible
+filetype off
 
 set rtp+=~/.vim/bundle/vundle.git/
 call vundle#rc()
 
+" Install from vim-script
+" Bundle 'script_name'
 Bundle 'rails.vim'
 Bundle 'scala.vim'
+Bundle 'neocomplcache'
+Bundle 'grep.vim'
+Bundle 'unite.vim'
+
+" Install from github
+" Bundle 'user_name/repository_name'
+Bundle 'thinca/vim-ref'
+Bundle 'thinca/vim-quickrun'
 
 "-------------------------------------------------------------------------------
 " 基本設定 Basics

@@ -1,11 +1,11 @@
-Clone from github
-git clone git@github.com:yuroyoro/dotfiles.git
 
-ln -s dotfiles/.zshrc ~/.zshrc
+dotfiles/setup.sh
 
-.dotfileの種類
-.vimrc
-.vim/
-.screenrc
-.zshrc
+git submodule init
+git submodule update
+
+vi
+:BundleInstall
+
+
 
