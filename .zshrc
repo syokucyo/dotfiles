@@ -402,11 +402,11 @@ bindkey -a 'q' push-line
 setopt complete_aliases     # aliased ls needs if file/dir completions work
 
 alias where="command -v"
-alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
 
 case "${OSTYPE}" in
 freebsd*|darwin*)
     alias ls="ls -alG"
+    alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
     zle -N expand-to-home-or-insert
     bindkey "@"  expand-to-home-or-insert
     ;;
