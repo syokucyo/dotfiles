@@ -11,6 +11,7 @@ Bundle 'scala.vim'
 Bundle 'neocomplcache'
 Bundle 'grep.vim'
 Bundle 'unite.vim'
+Bundle 'VimClojure'
 
 " Install from github
 " Bundle 'user_name/repository_name'
